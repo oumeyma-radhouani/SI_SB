@@ -1,0 +1,13 @@
+package tn.esprit.spring.Services;
+
+import tn.esprit.spring.entity.Reservation;
+
+import java.util.List;
+
+public interface IReservationService {
+    Reservation creer (Reservation reservation);
+    Reservation obtenirParId(Long id);
+    List<Reservation> listerTous();
+    Reservation mettreAjour(Reservation reservation);
+    void supprimer(Long id);
+}
